@@ -6,6 +6,8 @@ import (
 	"log"
 	"net/http"
 
+	"fmt"
+
 	"github.com/howeyc/gopass"
 )
 
@@ -63,6 +65,7 @@ func GetPullsListclosed(repository, owner, username string) []PullRequest {
 	}
 
 	if username != "" {
+		fmt.Print("input your password:")
 		password, err := gopass.GetPasswdMasked()
 		if err != nil {
 			log.Println(err)
