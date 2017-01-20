@@ -1,0 +1,37 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "gWIKF23Dvpo2qAk50ANCi6NPTA8=",
+			"path": "github.com/howeyc/gopass",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "40vJyUB4ezQSn/NSadsKEOrudMc=",
+			"path": "github.com/inconshreveable/mousetrap",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "Xcw6bb1nAu+k4JKNyscU6nLQWjc=",
+			"path": "github.com/spf13/cobra",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "GxPD7A0NjMDom1xte0mghkpzr0E=",
+			"path": "github.com/spf13/pflag",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "H7UkOZUU9oZSNPZDzaFHAvW0Z1I=",
+			"path": "golang.org/x/crypto/ssh/terminal",
+			"revision": ""
+		},
+		{
+			"checksumSHA1": "ocQvX+Oc2X7QEYaFB18/Q8uPMLc=",
+			"path": "golang.org/x/sys/unix",
+			"revision": ""
+		}
+	],
+	"rootPath": "changelog"
+}
