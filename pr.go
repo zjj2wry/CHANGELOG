@@ -26,8 +26,8 @@ var changelog = `
 func NewPullRequestCommand() *cobra.Command {
 	var pullRequestCommand = &cobra.Command{
 		Use:   "pull",
-		Short: "-。 -",
-		Long:  `-。 -`,
+		Short: "generated changelog by pullrequest",
+		Long:  `changelog pull -u {username} -r {repository} -o {repositoryOwner}`,
 		Run:   generatedChangelogByPr,
 	}
 	pullRequestCommand.Flags().StringVarP(&repository, "repository", "r", "cyclone", "set repository")
