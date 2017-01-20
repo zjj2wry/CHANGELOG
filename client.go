@@ -1,13 +1,12 @@
 package main
 
 import (
-	"bufio"
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
-	"os"
+
+	"github.com/howeyc/gopass"
 )
 
 // Todo:hide password
@@ -64,15 +63,11 @@ func GetPullsListclosed(repository, owner, username string) []PullRequest {
 	}
 
 	if username != "" {
-		reader := bufio.NewReader(os.Stdin)
-		fmt.Print("input your password:")
-		password, _, err := reader.ReadLine()
+		password, err := gopass.GetPasswdMasked()
 		if err != nil {
 			log.Println(err)
 			return nil
 		}
-		// C.getString()
-		// C.GoString(C.c)
 		req.SetBasicAuth(username, string(password))
 	}
 
