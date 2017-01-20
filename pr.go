@@ -40,7 +40,7 @@ func NewPullRequestCommand() *cobra.Command {
 func generatedChangelogByPr(cmd *cobra.Command, args []string) {
 	pulls := GetPullsListclosed(repository, owner, username)
 	ResolveTemplate(pulls)
-	fmt.Println(pulls[0].User.Login, pulls[0].User.Html_url, pulls[0].User.Url)
+	fmt.Println("Sucess!")
 }
 
 //resolve template
